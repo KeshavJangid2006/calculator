@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+   char arthmeticoperator;
+   double num1,num2,result;
+   printf("enter the arthmetic operator[+,-,*,/]:");
+   scanf("%c",&arthmeticoperator);
+   printf("enter num1:");
+   scanf("%lf",&num1);
+   printf("enter num2:");
+   scanf("%lf",&num2);
+   switch (arthmeticoperator){
+       case'+':
+       result=num1+num2;
+       printf("Result=%.4f\n",result);
+       break;
+       case'-':
+       result=num1-num2;
+       printf("Result=%.4f\n",result);
+       break;
+       case'*':
+       result=num1*num2;
+       printf("Result=%.4f\n",result);
+       break;
+       case'/':
+       result=num1/num2;
+       printf("Result=%.4f\n",result);
+       break;
+       default:
+       printf("invalid arthmetic operator! Please use [+,-,*or/]\n");
+   }
+   return 0;
+}
